@@ -39,7 +39,7 @@ const validateToken = (req, res, next) => {
     })
 }
 
-const singup = (req, res, next) => { 
+const signup = (req, res, next) => { 
     const name = req.body.name || ''
     const email = req.body.email || ''
     const password = req.body.password || ''
@@ -80,4 +80,4 @@ const singup = (req, res, next) => {
     })
 }
 
-module.exports = {login, singup, validateToken}
+module.exports = {login, signup, validateToken}
